@@ -25,15 +25,15 @@ const UsersPageComponent = ({ fetchUsers, deleteUser }) => {
   useEffect(() => {
     const abctrl = new AbortController();
     setLoadingUsers(true);
-    
-      fetchUsers(abctrl)
-        .then((res) => {
-          setUsers(res);
-          setLoadingUsers(false);
-        }).catch((er) =>
-          dispatch(logout())
-        );
-    
+
+    fetchUsers(abctrl)
+      .then((res) => {
+        setUsers(res);
+        setLoadingUsers(false);
+      }).catch((er) =>
+        dispatch(logout())
+      );
+
   }, [userDeleted]);
 
   return (

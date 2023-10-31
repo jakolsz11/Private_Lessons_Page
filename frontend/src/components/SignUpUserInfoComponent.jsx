@@ -32,6 +32,10 @@ export const SignUpUserInfoComponent = ({ lessonInfo, signUpForClassesHandler, s
         </span>
         <br />
         <span>
+          <b>Teacher:</b> {lessonInfo.teacher}
+        </span>
+        <br />
+        <span>
           <b>Comment:</b>
         </span>
         <br />

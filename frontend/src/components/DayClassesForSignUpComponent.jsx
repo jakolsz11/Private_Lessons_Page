@@ -47,9 +47,12 @@ const DayClassesForSignUpComponent = ({ day, setInfoAboutLesson, emptyText }) =>
             name: user.name,
             lastName: user.lastName,
             email: user.email,
-            phoneNumber: user.phoneNumber
+            phoneNumber: user.phoneNumber,
+            teacher: lesson.teacher.name + " " + lesson.teacher.lastName
           })} >
             {lesson.start} - {lesson.end}
+            <br/>
+            {`${lesson.teacher.name} ${lesson.teacher.lastName}`}
           </div>
           
         )) : (

@@ -94,7 +94,7 @@ const getFreeClasses = async (req, res, next) => {
       for (const day of days) {
         try {
           let element = {};
-          const classes = await Class.find({ date: day, reserved: false }).sort({ start: 1 });
+          const classes = await Class.find({ date: day, reserved: false }).populate("teacher", "-password").sort({ start: 1 });
           if (classes.length === 0) {
             element = {
               date: day,

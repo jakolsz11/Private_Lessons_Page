@@ -18,7 +18,7 @@ const HomePage = () => {
           </p>
         </Row>
         <Row>
-          <b>Contakt me:</b>
+          <b>Contact me:</b>
           <p className="mb-0"><b>Email: </b>olszanecki.jakub@gmail.com</p>
           <p className="mb-0"><b>Phone: </b>535 078 734</p>
           <p><b>Facebook: </b><a href="https://www.facebook.com/kuba.olszanecki/" target="_blank">Kuba Olszanecki</a></p>

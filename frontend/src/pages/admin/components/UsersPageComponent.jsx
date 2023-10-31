@@ -22,13 +22,11 @@ const UsersPageComponent = ({ fetchUsers, deleteUser }) => {
     };
   };
 
-  const effectRun = useRef(false);
-
   useEffect(() => {
     const abctrl = new AbortController();
     setLoadingUsers(true);
 
-    if (effectRun.current) {
+    
       fetchUsers(abctrl)
         .then((res) => {
           setUsers(res);
@@ -36,12 +34,7 @@ const UsersPageComponent = ({ fetchUsers, deleteUser }) => {
         }).catch((er) =>
           dispatch(logout())
         );
-    }
-
-    return () => {
-      abctrl.abort();
-      effectRun.current = true;
-    };
+    
   }, [userDeleted]);
 
   return (

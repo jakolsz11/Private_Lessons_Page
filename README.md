@@ -1,6 +1,7 @@
-# Private_Lessons_Page
+# Private_Lessons_Webpage
 
 Link to webpage: https://frontend-private-lessons.onrender.com/
+The website is in beta version, and I plan to redesign its appearance and add new features.
 
 # Technologies Used
 - MongoDB

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/olsza/OneDrive/Pulpit/PrivateLessonsWebsite",
+      "program": "c:/Users/olsza/OneDrive/Pulpit/PrivateLessonsWebsite/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
